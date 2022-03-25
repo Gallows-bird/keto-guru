@@ -2,15 +2,18 @@
 @import "_fonts.scss";
 
 .header {
-  background: url("/img/background-header-pink.png") no-repeat 100% top, url("/img/header-girl.png") no-repeat center top;
+  background: url("/img/background-header-pink.png") no-repeat 100% top, url("/img/header-girl-big.png") no-repeat 70% top;
   min-height: 500px;
   z-index: 50;
   color: #fff;
   font-family: "Roboto Light";
+  mask-image: url("/img/mask.svg") no-repeat center bottom / auto 100%;
+  -webkit-mask: url("/img/mask.svg") no-repeat center bottom / auto 100%;
+  background-size: auto 100%;
 }
 
 .container {
-  width: 320px;
+  width: 300px;
   padding: 10px 10px 0 10px;
   margin: 0 auto;
 }
@@ -22,7 +25,7 @@
   margin-bottom: 34px;
 }
 
-.header__heading-text {
+.header__title {
   margin-top: 0;
   margin-bottom: 23px;
   font-family: Playfair Display, sans-serif;
@@ -62,22 +65,83 @@
   }
 }
 
+.compare-section {
+  //background: url("/img/compare-background-mob.png") no-repeat center top;
+  min-height: 1100px;
+  margin-top: -100px;
+  padding-top: 150px;
+  font-family: "Roboto Light";
+}
+
+.compare__title {
+  font-family: Playfair Display, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  color: #ce0303;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  max-width: 70%;
+}
+
+.compare__text {
+  background: url("/img/ellipses.png");
+  height: 300px;
+}
+
 @media (min-width: 480px) {
   .header {
-    background: url("/img/background-header-pink.png") no-repeat 110% top, url("/img/header-girl.png") no-repeat center top;
+    background: url("/img/background-header-pink.png") no-repeat 110% top, url("/img/header-girl-big.png") no-repeat 60% top;
   }
 }
 
 @media (min-width: 768px) {
   .header {
     background: url("/img/background-header-pink.png") no-repeat 160% top, url("/img/header-girl-big.png") no-repeat center top;
+  }
 
+  .container {
+    width: 600px;
+  }
+
+  .compare-section {
+    background: url("/img/compare-background.png") no-repeat center top;
+  }
+
+  .d-none {
+    display: none;
   }
 }
 
 @media (min-width: 980px) {
   .header {
     background: url("/img/background-header-pink.png") no-repeat 180% top, url("/img/header-girl-big.png") no-repeat center top;
+    min-height: 850px;
+  }
+
+  .container {
+    width: 950px;
+    padding: 60px 15px 0 15px;
+  }
+
+  .header__logo {
+    margin-bottom: 100px;
+  }
+
+  .header__text {
+    margin-bottom: 115px;
+    margin-left: 120px;
+  }
+
+  .header__title {
+    font-size: 110px;
+    line-height: 75px;
+    &:last-child {
+      margin-left: 120px;
+    }
+  }
+
+  .header__button {
+    margin-left: 120px;
   }
 }
 
@@ -85,4 +149,5 @@
   .header {
     background: url("/img/background-header-pink.png") no-repeat left top, url("/img/header-girl-big.png") no-repeat center top;
   }
+
 }
