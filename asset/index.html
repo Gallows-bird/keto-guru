@@ -10,6 +10,8 @@
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://ctr-localhost.ru/vlad/jq.js"></script>
+
   <title>KETO GURU</title>
 </head>
 <body>
@@ -24,20 +26,159 @@
       <p class="header__text">
         Экспресс-похудение без вреда для здоровья!
       </p>
-      <a href="#" class="header__button">Узнать больше</a>
+      <a href="#" class="header__button button">Узнать больше</a>
     </div>
   </section>
 </header>
 <main>
-  <section class="compare-section">
-    <div class="container">
-      <div class="compare__title">
-        <p>Диеты <br class="d-none">и спорт - самые неэффективные методы для похудения!</p>
+  <section class="defect-section">
+    <div class="container clearfix">
+      <div class="defect-top clearfix">
+        <div class="defect__title">
+          <p>Диеты <br class="d-none">и спорт - самые неэффективные методы для похудения!</p>
+        </div>
+        <div class="defect__text">
+          <p>Считается, что занятия спортом и диета быстро сжигают жир. Специалисты доказали, что это самые
+            неэффективные
+            методы</p>
+        </div>
       </div>
-      <div class="compare__text">
-        <p>Считается, что занятия спортом и диета быстро сжигают жир. Специалисты доказали, что это самые неэффективные методы
+      <div class="defect__side-left">
+        <p class="defect__side-title">
+          Недостатки диеты:
         </p>
+        <ul class="defect__list">
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Чувство голода,</span> еда по часам</p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text">Отказ от любимых продуктов и блюд</p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Вероятность срыва - 95%</span></p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text">После завершения диеты <span class="accent">вес возвращается</span></p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Сжигается мышечная масса,</span> а не жир</p>
+          </li>
+        </ul>
       </div>
+      <div class="defect__side-right">
+        <p class="defect__side-title">
+          Недостатки спорта:
+        </p>
+        <ul class="defect__list">
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Посещение спортзала</span> 3-4 раза в неделю</p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Низкая эффективность </span>- результаты заметны через 4-6
+              недель</p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Большая нагрузка </span> на суставы и мышцы</p>
+          </li>
+          <li class="defect__item">
+            <p class="defect__item-text"><span class="accent">Противопоказания определенным видам нагрузок </span> при
+              избыточной массе тела</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="try-section">
+    <div class="container clearfix">
+      <div class="try-head">
+        <div class="try__title">
+          <p>
+            Программа безопасного снижения веса по принципу кето&nbsp;-&nbsp;диеты
+          </p>
+        </div>
+        <img src="/img/product.png" alt="product" class="try__product">
+      </div>
+      <div class="try-body">
+        <ul class="try__list">
+          <li class="try__list-item clearfix">
+            <img src="/img/try_icon1.png" alt="icon">
+            <span>Эффективно</span>
+            <p>Сброшенные килограммы не возвращаются</p>
+          </li>
+          <li class="try__list-item clearfix">
+            <img src="/img/try_icon2.png" alt="icon">
+            <span>Быстро</span>
+            <p>Первые результаты уже через несколько дней</p>
+          </li>
+          <li class="try__list-item clearfix">
+            <img src="/img/try_icon3.png" alt="icon">
+            <span>Безопасно</span>
+            <p>Без вреда для здоровья, без срывов</p>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="try__button pink-button button">Попробовать сейчас</a>
+    </div>
+    <img src="/img/leaf1.png" alt="" class="leaf leaf1">
+    <img src="/img/leaf2.png" alt="" class="leaf leaf2">
+    <img src="/img/leaf3.png" alt="" class="leaf leaf3">
+  </section>
+  <section class="calc-section">
+    <div class="container clearfix">
+      <div class="calc-left">
+        <p class="calc-left__title">
+          <b>Узнайте, не пора ли вам худеть -</b> внесите свои данные в поля калькулятора.
+        </p>
+        <form action="" class="calc-left__form">
+          <div class="input-wrap clearfix">
+            <span>Вес в кг</span>
+            <input type="number" class="calc-input" id="calcWeight" min="40" max="300" step="1" value="70">
+            <label for="calcWeight">кг |</label>
+          </div>
+          <div class="input-wrap clearfix">
+            <span>Рост в см</span>
+            <input type="number" class="calc-input" id="calcHeight" min="140" max="220" step="1" value="180">
+            <label for="calcHeight">см |</label>
+          </div>
+          <button class="calc-button purple-button button" id="calcBtn">Рассчитать</button>
+        </form>
+      </div>
+      <div class="calc-right">
+        <div class="calc__result" id="calcTotal3">
+          <img src="./img/fat-girl.png" alt="">
+          <p class="calc__result-text">
+            <b>ИМТ Больше 25</b>
+            <br>
+            У вас избыточная масса тела. Вес срочно нуждается в коррекции. Не откладывайте похудение - начните путь к
+            стройной фигуре прямо сейчас вместе с Keto Guru.
+          </p>
+        </div>
+        <div class="calc__result" id="calcTotal2">
+          <img src="./img/normal-girl.png" alt="">
+          <p class="calc__result-text">
+            <b>ИМТ 18 - 25</b>
+            <br>
+            Вес в пределах нормы, присутствует склонность к полноте. Чтобы не набрать лишние килограммы и поддерживать
+            себя в форме пропейте курс Keto Guru.
+          </p>
+        </div>
+        <div class="calc__result" id="calcTotal1">
+          <img src="./img/skinny-girl.png" alt="">
+          <p class="calc__result-text">
+            <b>ИМТ Меньше 18</b>
+            <br>
+            Ваш организм находится на грани истощения. Keto Guru поможет стабилизировать вес и поддерживать его в
+            пределах нормы.
+          </p>
+        </div>
+        <a class="pink-button button">Хочу начать</a>
+      </div>
+    </div>
+  </section>
+  <section class="slider-section">
+    <div class="container">
+      <img src="./img/green-logo.png" alt="" class="slider__logo">
+
     </div>
   </section>
 </main>
