@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap"
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+
   <script src="https://ctr-localhost.ru/vlad/jq.js"></script>
+  <script src="./js/libs/slick/slick.min.js"></script>
 
   <title>KETO GURU</title>
 </head>
@@ -119,9 +121,9 @@
       </div>
       <a href="#" class="try__button pink-button button">Попробовать сейчас</a>
     </div>
-    <img src="/img/leaf1.png" alt="" class="leaf leaf1">
-    <img src="/img/leaf2.png" alt="" class="leaf leaf2">
-    <img src="/img/leaf3.png" alt="" class="leaf leaf3">
+    <div class="leaf leaf1"></div>
+    <div class="leaf leaf2"></div>
+    <div class="leaf leaf3"></div>
   </section>
   <section class="calc-section">
     <div class="container clearfix">
@@ -178,8 +180,108 @@
   <section class="slider-section">
     <div class="container">
       <img src="./img/green-logo.png" alt="" class="slider__logo">
+      <img src="./img/slider-girl.png" alt="" class="slider__girl">
+      <p class="slider__title">лучшая альтернатива для борьбы с лишним весом!</p>
+      <div class="slider-arrows">
+        <img src="./img/purple-small-arrow.png" alt="" class="slider-left-arrow">
+        <img src="./img/pink-right-arrow.png" alt="" class="slider-right-arrow">
+      </div>
+      <div class="slider-wrap">
+        <div class="slider__box">
+          <div class="slider__item slide1">
+            <div class="slider__item-inner">
+              <p class="slider__item-number">
+                01
+              </p>
+              <p class="slider__item-text">
+                Разгоняет метаболизм и вводит в организм в состояние кетоза на 3-4 день, при этом сводя на “нет” все
+                симптомы кето-гриппа. Лишний вес начинает уходить на 5-й день.
+              </p>
+            </div>
+          </div>
+          <div class="slider__item slide2">
+            <div class="slider__item-inner">
 
+              <p class="slider__item-number">
+                02
+              </p>
+              <p class="slider__item-text">
+                При употреблении Keto Guru не обязательно соблюдать пищевые правила и истязать себя физическими
+                нагрузками. Похудение начинается в любом случае.
+              </p>
+            </div>
+          </div>
+          <div class="slider__item slide3">
+            <div class="slider__item-inner">
+              <p class="slider__item-number">
+                03
+              </p>
+              <p class="slider__item-text">
+                Работает по принципу кето-диеты. Шипучие таблетки увеличивают концентрацию кетонов в крови, метаболизм
+                переходит в состояние кетоза, исчезают жировые отложения в проблемных зонах.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="components-section">
+    <div class="container">
+      <div class="components__title">
+        Активные компоненты Keto Guru для быстрого похудения
+      </div>
+      <div class="components__product-wrap">
+        <img src="./img/components-vitamins.png" alt="" class="components__vitamins">
+        <img src="./img/product.png" alt="" class="components__product-img">
+      </div>
+      <ul class="components__list">
+        <li class="components__item">
+          <p class="components__item-title">
+            Магний
+          </p>
+          <p class="components__item-text">
+            Снимает раздражительность, <span>предотвращает развитие депрессии,</span> улучшает общее состояние.
+          </p>
+        </li>
+        <li class="components__item">
+          <p class="components__item-title">
+            Аминомасляная кислота
+          </p>
+          <p class="components__item-text">
+            Повышает концентрацию внимания, <span>улучшает качество сна,</span> способствует расслаблению.
+          </p>
+        </li>
+        <li class="components__item">
+          <p class="components__item-title">
+            L-глутамин
+          </p>
+          <p class="components__item-text">
+            Снижает усталость, повышает выносливость, <span>обеспечивает похудение за счет сжигания жировых отложений,</span> а не мышечной массы.
+          </p>
+        </li>
+        <li class="components__item">
+          <p class="components__item-title">
+            Витамины группы B
+          </p>
+          <p class="components__item-text">
+            <span>Поддерживают работу всех систем и органов,</span> снижают уровень холестерина, улучшают репродуктивную функцию.
+          </p>
+        </li>
+        <li class="components__item">
+          <p class="components__item-title">
+            Калий
+          </p>
+          <p class="components__item-text">
+            Снижает риск развития кето-гриппа при соблюдении диеты, <span>нормализует кровяное давление, </span> устраняет слабость мышц.
+          </p>
+        </li>
+      </ul>
+      <a href="#" class="button pink-button">Похудеть с Keto Guru</a>
+    </div>
+    <div class="leaf leaf1"></div>
+    <div class="leaf leaf2"></div>
+    <div class="leaf leaf3"></div>
   </section>
 </main>
 <script src="js/app.js"></script>
