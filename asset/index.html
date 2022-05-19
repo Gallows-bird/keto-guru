@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap"
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,400i,700i|Roboto:300,400,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 
   <script src="https://ctr-localhost.ru/vlad/jq.js"></script>
@@ -21,7 +22,7 @@
   <section class="header-section">
     <div class="container">
       <img src="/img/logo.png" alt="Logo" class="header__logo">
-      <div class="header__heading">
+      <div class="header__heading block-title">
         <p class="header__title">Легкость</p>
         <p class="header__title">без усилий</p>
       </div>
@@ -36,7 +37,7 @@
   <section class="defect-section">
     <div class="container clearfix">
       <div class="defect-top clearfix">
-        <div class="defect__title">
+        <div class="defect__title block-title">
           <p>Диеты <br class="d-none">и спорт - самые неэффективные методы для похудения!</p>
         </div>
         <div class="defect__text">
@@ -93,7 +94,7 @@
   <section class="try-section">
     <div class="container clearfix">
       <div class="try-head">
-        <div class="try__title">
+        <div class="try__title block-title">
           <p>
             Программа безопасного снижения веса по принципу кето&nbsp;-&nbsp;диеты
           </p>
@@ -152,7 +153,7 @@
             <b>ИМТ Больше 25</b>
             <br>
             У вас избыточная масса тела. Вес срочно нуждается в коррекции. Не откладывайте похудение - начните путь к
-            стройной фигуре прямо сейчас вместе с Keto Guru.
+            стройной фигуре прямо сейчас вместе с Keto&nbsp;Guru.
           </p>
         </div>
         <div class="calc__result" id="calcTotal2">
@@ -161,7 +162,7 @@
             <b>ИМТ 18 - 25</b>
             <br>
             Вес в пределах нормы, присутствует склонность к полноте. Чтобы не набрать лишние килограммы и поддерживать
-            себя в форме пропейте курс Keto Guru.
+            себя в форме пропейте курс Keto&nbsp;Guru.
           </p>
         </div>
         <div class="calc__result" id="calcTotal1">
@@ -169,7 +170,7 @@
           <p class="calc__result-text">
             <b>ИМТ Меньше 18</b>
             <br>
-            Ваш организм находится на грани истощения. Keto Guru поможет стабилизировать вес и поддерживать его в
+            Ваш организм находится на грани истощения. Keto&nbsp;Guru поможет стабилизировать вес и поддерживать его в
             пределах нормы.
           </p>
         </div>
@@ -181,7 +182,7 @@
     <div class="container">
       <img src="./img/green-logo.png" alt="" class="slider__logo">
       <img src="./img/slider-girl.png" alt="" class="slider__girl">
-      <p class="slider__title">лучшая альтернатива для борьбы с лишним весом!</p>
+      <p class="slider__title block-title">лучшая альтернатива для борьбы с лишним весом!</p>
       <div class="slider-arrows">
         <img src="./img/purple-small-arrow.png" alt="" class="slider-left-arrow">
         <img src="./img/pink-right-arrow.png" alt="" class="slider-right-arrow">
@@ -206,7 +207,7 @@
                 02
               </p>
               <p class="slider__item-text">
-                При употреблении Keto Guru не обязательно соблюдать пищевые правила и истязать себя физическими
+                При употреблении Keto&nbsp;Guru не обязательно соблюдать пищевые правила и истязать себя физическими
                 нагрузками. Похудение начинается в любом случае.
               </p>
             </div>
@@ -228,60 +229,177 @@
   </section>
   <section class="components-section">
     <div class="container">
-      <div class="components__title">
-        Активные компоненты Keto Guru для быстрого похудения
+      <div class="components__title block-title">
+        Активные компоненты Keto&nbsp;Guru для быстрого похудения
       </div>
       <div class="components__product-wrap">
         <img src="./img/components-vitamins.png" alt="" class="components__vitamins">
         <img src="./img/product.png" alt="" class="components__product-img">
+        <ul class="components__tab-list">
+          <li class="components__tab-item active">-</li>
+          <li class="components__tab-item">+</li>
+          <li class="components__tab-item">+</li>
+          <li class="components__tab-item">+</li>
+          <li class="components__tab-item">+</li>
+        </ul>
       </div>
       <ul class="components__list">
-        <li class="components__item">
-          <p class="components__item-title">
-            Магний
+        <li class="components__item active">
+          <p>
+            <span class="components__item-title">Магний</span>
           </p>
           <p class="components__item-text">
             Снимает раздражительность, <span>предотвращает развитие депрессии,</span> улучшает общее состояние.
           </p>
         </li>
         <li class="components__item">
-          <p class="components__item-title">
-            Аминомасляная кислота
+          <p>
+            <span class="components__item-title">Аминомасляная</span> <span
+                  class="components__item-title">кислота</span>
           </p>
           <p class="components__item-text">
             Повышает концентрацию внимания, <span>улучшает качество сна,</span> способствует расслаблению.
           </p>
         </li>
         <li class="components__item">
-          <p class="components__item-title">
+          <p>
+            <span class="components__item-title">
             L-глутамин
+            </span>
           </p>
           <p class="components__item-text">
-            Снижает усталость, повышает выносливость, <span>обеспечивает похудение за счет сжигания жировых отложений,</span> а не мышечной массы.
+            Снижает усталость, повышает выносливость,
+            <span>обеспечивает похудение за счет сжигания жировых отложений,</span> а не мышечной массы.
           </p>
         </li>
         <li class="components__item">
-          <p class="components__item-title">
-            Витамины группы B
+          <p>
+            <span class="components__item-title">Витамины группы B</span>
           </p>
           <p class="components__item-text">
-            <span>Поддерживают работу всех систем и органов,</span> снижают уровень холестерина, улучшают репродуктивную функцию.
+            <span>Поддерживают работу всех систем и органов,</span> снижают уровень холестерина, улучшают репродуктивную
+            функцию.
           </p>
         </li>
         <li class="components__item">
-          <p class="components__item-title">
-            Калий
+          <p>
+            <span class="components__item-title">Калий</span>
           </p>
           <p class="components__item-text">
-            Снижает риск развития кето-гриппа при соблюдении диеты, <span>нормализует кровяное давление, </span> устраняет слабость мышц.
+            Снижает риск развития кето-гриппа при соблюдении диеты, <span>нормализует кровяное давление, </span>
+            устраняет слабость мышц.
           </p>
         </li>
       </ul>
-      <a href="#" class="button pink-button">Похудеть с Keto Guru</a>
+      <a href="#" class="button pink-button">Похудеть с Keto&nbsp;Guru</a>
     </div>
     <div class="leaf leaf1"></div>
     <div class="leaf leaf2"></div>
     <div class="leaf leaf3"></div>
+  </section>
+  <section class="inst-section">
+    <div class="container">
+      <div class="inst__title block-title">
+        Keto Guru разделил <br> их жизнь <br> на “ДО” и “ПОСЛЕ”
+      </div>
+      <ul class="inst__list">
+        <li class="inst__item">
+          <div class="inst__post">
+            <div class="inst__post-top">
+              <img class="inst__avatar" src="img/avatar1.png" alt="">
+              <span class="inst__name">Anna Stepanova</span>
+            </div>
+            <img class="inst__post-photo" src="img/inst-photo1.png" alt="">
+            <div class="inst__post-buttons">
+              <img src="img/inst-like.png" alt="">
+              <img src="img/inst-comment.png" alt="">
+              <img src="img/inst-download.png" alt="">
+              <img src="img/inst-save.png" alt="">
+            </div>
+            <div class="inst__content">
+              <p class="inst__like-count">111 отметок "Нравится"</p>
+              <p class="inst__text"><span class="inst__author">Anna</span> Однажды я случайно наткнулась в инсте на блог одной прекрасной девушки, которая похудела примерно на 70 кг на средстве Keto Guru, которое полностью заменило ей кето-диету. Поспрашивала я об этом средстве, почитала.... Инфы в интернете масса, но нужно уметь отделять ложь от правды. В этом мне помогли некоторые знающие гуру, которых я также нашла в инсте.
+                <br>
+                За месяц я скинула 10 кг! Причем не чувствуя голода и иногда даже переедая. Я не отказываю себе в удовольствиях и при этом полностью забила на спорт.
+                <br>
+                Мои результаты с Keto Guru:
+                - я похудела на 10 кг. Сейчас я вешу 68 кг. Этот вес у меня был года 4 назад последний раз. Впереди еще 8 кг!
+                <br>
+                - я стала лучше себя чувствовать. <br>
+                - я перестала быть злой и агрессивной. <br>
+                - улучшилось состояние кожи. <br>
+                Keto Guru - отличный способ похудеть для тех, кто не хочет ничего менять в своей жизни, для таких как я!
+                <br>
+                <br>
+                <span class="inst__hashtag">#Keto Guru</span><span class="inst__hashtag">#grow thin without limits</span>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="inst__item"><div class="inst__post">
+          <div class="inst__post-top">
+            <img class="inst__avatar" src="img/avatar2.png" alt="">
+            <span class="inst__name">Anna Stepanova</span>
+          </div>
+          <img class="inst__post-photo" src="img/inst-photo2.png" alt="">
+          <div class="inst__post-buttons">
+            <img src="img/inst-like.png" alt="">
+            <img src="img/inst-comment.png" alt="">
+            <img src="img/inst-download.png" alt="">
+            <img src="img/inst-save.png" alt="">
+          </div>
+          <div class="inst__content">
+            <p class="inst__like-count">111 отметок "Нравится"</p>
+            <p class="inst__text"><span class="inst__author">Anna</span> Однажды я случайно наткнулась в инсте на блог одной прекрасной девушки, которая похудела примерно на 70 кг на средстве Keto Guru, которое полностью заменило ей кето-диету. Поспрашивала я об этом средстве, почитала.... Инфы в интернете масса, но нужно уметь отделять ложь от правды. В этом мне помогли некоторые знающие гуру, которых я также нашла в инсте.
+              <br>
+              За месяц я скинула 10 кг! Причем не чувствуя голода и иногда даже переедая. Я не отказываю себе в удовольствиях и при этом полностью забила на спорт.
+              <br>
+              Мои результаты с Keto Guru:
+              - я похудела на 10 кг. Сейчас я вешу 68 кг. Этот вес у меня был года 4 назад последний раз. Впереди еще 8 кг!
+              <br>
+              - я стала лучше себя чувствовать. <br>
+              - я перестала быть злой и агрессивной. <br>
+              - улучшилось состояние кожи. <br>
+              Keto Guru - отличный способ похудеть для тех, кто не хочет ничего менять в своей жизни, для таких как я!
+              <br>
+              <br>
+              <span class="inst__hashtag">#Keto Guru</span><span class="inst__hashtag">#grow thin without limits</span>
+            </p>
+          </div>
+        </div></li>
+        <li class="inst__item"><div class="inst__post">
+          <div class="inst__post-top">
+            <img class="inst__avatar" src="img/avatar3.png" alt="">
+            <span class="inst__name">Anna Stepanova</span>
+          </div>
+          <img class="inst__post-photo" src="img/inst-photo3.png" alt="">
+          <div class="inst__post-buttons">
+            <img src="img/inst-like.png" alt="">
+            <img src="img/inst-comment.png" alt="">
+            <img src="img/inst-download.png" alt="">
+            <img src="img/inst-save.png" alt="">
+          </div>
+          <div class="inst__content">
+            <p class="inst__like-count">111 отметок "Нравится"</p>
+            <p class="inst__text"><span class="inst__author">Anna</span> Однажды я случайно наткнулась в инсте на блог одной прекрасной девушки, которая похудела примерно на 70 кг на средстве Keto Guru, которое полностью заменило ей кето-диету. Поспрашивала я об этом средстве, почитала.... Инфы в интернете масса, но нужно уметь отделять ложь от правды. В этом мне помогли некоторые знающие гуру, которых я также нашла в инсте.
+              <br>
+              За месяц я скинула 10 кг! Причем не чувствуя голода и иногда даже переедая. Я не отказываю себе в удовольствиях и при этом полностью забила на спорт.
+              <br>
+              Мои результаты с Keto Guru:
+              - я похудела на 10 кг. Сейчас я вешу 68 кг. Этот вес у меня был года 4 назад последний раз. Впереди еще 8 кг!
+              <br>
+              - я стала лучше себя чувствовать. <br>
+              - я перестала быть злой и агрессивной. <br>
+              - улучшилось состояние кожи. <br>
+              Keto Guru - отличный способ похудеть для тех, кто не хочет ничего менять в своей жизни, для таких как я!
+              <br>
+              <br>
+              <span class="inst__hashtag">#Keto Guru</span><span class="inst__hashtag">#grow thin without limits</span>
+            </p>
+          </div>
+        </div></li>
+      </ul>
+    </div>
   </section>
 </main>
 <script src="js/app.js"></script>

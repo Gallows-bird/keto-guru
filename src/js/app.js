@@ -49,4 +49,16 @@ $(document).ready(function () {
     }
     BMI = null
   })
+
+
+  $(".components__tab-item").click(function () {
+    if ($(this).hasClass('active')) {
+      return
+    } else {
+      $(this).text('-')
+      $(this).addClass('active').siblings().removeClass('active').text('+')
+      $('.components__item').removeClass('active').eq($(this).index()).addClass('active');
+    }
+  })
+
 })
