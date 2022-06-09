@@ -478,7 +478,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 0 5px 7px white;
+  text-shadow: 0px 5px 7px white;
   color: #181818;
 }
 
@@ -1264,19 +1264,26 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 30px;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 50;
 }
 
 .inst-section {
   background-color: #fbf7fd;
   margin-top: -180px;
   padding-top: 180px;
+  margin-bottom: -200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  mask-image: url("/img/mask.svg") no-repeat center bottom/auto 100%;
+  -webkit-mask: url("/img/mask.svg") no-repeat center bottom/auto 100%;
 }
 
 .inst__post {
   padding: 10px;
   background-color: #ffffff;
   border-radius: 2px;
-  box-shadow: 0px 0px 29px 0px rgba(116, 152, 188, 0.32);
   font-family: "Open Sans";
 }
 
@@ -1309,6 +1316,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .inst__post-buttons img {
   margin-right: 10px;
+  float: left;
 }
 
 .inst__post-buttons img:last-child {
@@ -1336,6 +1344,114 @@ input[type=number]::-webkit-inner-spin-button {
   color: #032f94;
 }
 
+.inst__date {
+  font-size: 10px;
+  color: #999999;
+}
+
+.inst__list {
+  box-shadow: 0px 0px 29px 0px rgba(116, 152, 188, 0.32);
+  margin-bottom: 70px;
+  z-index: 50;
+}
+
+.inst__slider-arrows {
+  display: block;
+  width: 70px;
+  margin: -50px auto 50px auto;
+}
+
+.inst__slider-left-arrow {
+  float: left;
+}
+
+.inst__slider-right-arrow {
+  float: right;
+}
+
+.slick-slide {
+  height: 0px !important;
+}
+
+.slick-slide.slick-active {
+  height: 100% !important;
+}
+
+.bg-circle {
+  border-radius: 100%;
+  position: absolute;
+  z-index: 20;
+}
+
+.bg-circle1 {
+  border: 70px solid rgba(249, 216, 229, 0.6);
+  width: 150px;
+  height: 150px;
+  top: 180px;
+  left: -10%;
+}
+
+.bg-circle2 {
+  border: 45px solid rgba(249, 216, 229, 0.3);
+  width: 100px;
+  height: 100px;
+  top: 250px;
+  right: 10%;
+}
+
+.bg-circle3 {
+  border: 25px solid rgba(96, 211, 197, 0.3);
+  width: 85px;
+  height: 85px;
+  bottom: 200px;
+  left: 10%;
+}
+
+.bg-circle4 {
+  border: 15px solid rgba(255, 207, 181, 0.5);
+  width: 25px;
+  height: 25px;
+  bottom: 200px;
+  right: 10%;
+}
+
+.doctor-section {
+  min-height: 600px;
+  background: url("/img/doctor-bg-mob.png") no-repeat #f8f9f9;
+  background-position: top center;
+  padding-top: 100px;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.doctor-top {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.doctor-top__title {
+  font-size: 26px;
+  max-width: 220px;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+.doctor-top__logo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 25px;
+}
+
+.doctor-top__signa {
+  max-width: 150px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 25px;
+}
+
 @media (min-width: 480px) {
   .header {
     background: url("/img/background-header-pink.png") no-repeat 110% top, url("/img/header-girl-big.png") no-repeat 60% top;
@@ -1345,7 +1461,7 @@ input[type=number]::-webkit-inner-spin-button {
     padding-left: 23px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header {
     background: url("/img/background-header-pink.png") no-repeat 160% top, url("/img/header-girl-big.png") no-repeat center top;
   }
@@ -1528,6 +1644,15 @@ input[type=number]::-webkit-inner-spin-button {
     max-width: 400px;
     margin: 0 auto 30px auto;
     clear: both;
+  }
+
+  .inst__post {
+    box-shadow: 0px 0px 15px 0px rgba(116, 152, 188, 0.32);
+    margin: 15px;
+  }
+
+  .inst__list {
+    box-shadow: none;
   }
 }
 @media (min-width: 980px) {
@@ -1919,6 +2044,38 @@ input[type=number]::-webkit-inner-spin-button {
     /* for Safari */
     background-clip: padding-box;
     /* for IE9+, Firefox 4+, Opera, Chrome */
+  }
+
+  .bg-circle1 {
+    border: 80px solid rgba(249, 216, 229, 0.6);
+    width: 450px;
+    height: 450px;
+    top: 180px;
+    left: 10%;
+  }
+
+  .bg-circle2 {
+    border: 70px solid rgba(249, 216, 229, 0.3);
+    width: 320px;
+    height: 320px;
+    top: 250px;
+    right: 10%;
+  }
+
+  .bg-circle3 {
+    border: 25px solid rgba(96, 211, 197, 0.3);
+    width: 170px;
+    height: 170px;
+    bottom: 200px;
+    left: 10%;
+  }
+
+  .bg-circle4 {
+    border: 40px solid rgba(255, 207, 181, 0.5);
+    width: 40px;
+    height: 40px;
+    bottom: 200px;
+    right: 15%;
   }
 }
 @media (min-width: 1200px) {

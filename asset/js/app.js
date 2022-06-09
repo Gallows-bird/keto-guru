@@ -21,6 +21,29 @@ $(document).ready(function () {
       }
     }]
   });
+  $('.inst__list').slick({
+    dots: false,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: $('.inst__slider-left-arrow'),
+    nextArrow: $('.inst__slider-right-arrow'),
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        adaptiveHeight: true
+      }
+    }, {
+      breakpoint: 979,
+      settings: {
+        slidesToShow: 3,
+        adaptiveHeight: true
+      }
+    }]
+  });
   $('#calcTotal1, #calcTotal2').hide();
   $('#calcBtn').click(function () {
     event.preventDefault();
@@ -29,18 +52,21 @@ $(document).ready(function () {
     var BMI = Math.round(weight / Math.pow(height, 2));
 
     if (BMI > 25) {
-      $('#calcTotal1, #calcTotal2, #calcTotal3').hide();
-      $('#calcTotal3').show();
+      $('#calcTotal1, #calcTotal2, #calcTotal3').fadeOut().promise().done(function () {
+        $('#calcTotal3').fadeIn();
+      });
     }
 
     if (BMI > 18 && BMI < 25) {
-      $('#calcTotal1, #calcTotal2, #calcTotal3').hide();
-      $('#calcTotal2').show();
+      $('#calcTotal1, #calcTotal2, #calcTotal3').fadeOut().promise().done(function () {
+        $('#calcTotal2').fadeIn();
+      });
     }
 
     if (BMI < 18) {
-      $('#calcTotal1, #calcTotal2, #calcTotal3').hide();
-      $('#calcTotal1').show();
+      $('#calcTotal1, #calcTotal2, #calcTotal3').fadeOut().promise().done(function () {
+        $('#calcTotal1').fadeIn();
+      });
     }
 
     BMI = null;
