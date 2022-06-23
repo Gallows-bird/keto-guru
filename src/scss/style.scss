@@ -1082,6 +1082,116 @@
   z-index: 10;
 }
 
+.doctor-bottom__text-desk {
+  display: none;
+}
+
+.doctor-bottom__line-desk {
+  display: none;
+}
+
+.fb-section {
+  font-family: "Open Sans";
+}
+
+.fb__title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 20px;
+
+  & p {
+    font-size: 72px;
+  }
+}
+
+.fb__head {
+  height: 40px;
+  background: url("/img/fb-head-mob.png") no-repeat center center;
+  background-size: contain;
+}
+
+.fb__count-likes {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  float: left;
+}
+
+.fb__count-comments {
+  float: right;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.fb__count-likes img,
+.fb__count-likes span,
+.fb__count-comments {
+  vertical-align: middle;
+}
+
+.fb__count {
+  font-size: 14px;
+  line-height: 28px;
+  color: #626770;
+  border-bottom: 1px solid #e8ebef;
+  padding: 0 10px;
+}
+
+.fb__btns {
+  border-bottom: 1px solid #e8ebef;
+  min-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  & img {
+    vertical-align: middle;
+  }
+}
+
+.fb__comment {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.fb__comment-text {
+  max-width: 220px;
+  float: right;
+  background-color: #e8ebef;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
+  & span {
+    color: #3d5798;
+    font-weight: bold;
+  }
+}
+
+.fb__comment-img {
+  float: right;
+  max-width: 240px;
+  margin-bottom: 10px;
+}
+
+.fb__comment-avatar {
+  float: left;
+
+  & img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.fb__comment-actions {
+  width: 240px;
+  float: right;
+
+  & span {
+    color: #5b71a8;
+  }
+}
+
 @media (min-width: 480px) {
   .header {
     background: url("/img/background-header-pink.png") no-repeat 110% top, url("/img/header-girl-big.png") no-repeat 60% top;
@@ -1290,14 +1400,14 @@
   }
 
   .doctor-section {
-    min-height: 1300px;
+    min-height: 1420px;
     background: url("/img/doctor-bg.png") no-repeat;
     background-position: top center;
     background-size: cover;
   }
 
   .doctor-top {
-    max-width: 600px;
+    max-width: 480px;
     margin-left: auto;
   }
 
@@ -1309,6 +1419,85 @@
 
   .doctor-top__logo {
     max-width: 450px;
+  }
+
+  .doctor-top__signa {
+    bottom: 40px;
+  }
+
+  .doctor-bottom__title {
+    max-width: 430px;
+    font-size: 44px;
+    line-height: 48px;
+    float: left;
+  }
+
+  .doctor-bottom__text {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 380px;
+    margin-top: 0;
+  }
+
+  .doctor-bottom {
+    padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 200px 0 100px rgba(255, 255, 255, 0.8), -200px 0 100px rgba(255, 255, 255, 0.8);
+  }
+
+  .doctor-bottom__line-mob {
+    display: none;
+  }
+
+  .doctor-bottom__line-desk {
+    display: block;
+  }
+
+  .doctor-bottom__list ul li {
+    max-width: 200px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .doctor-bottom__list img {
+    left: -650px;
+    top: -365px;
+  }
+
+  .doctor-bottom__list ul {
+    margin-top: -289px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(1) {
+    left: -32px;
+    margin-top: 14px;
+    margin-bottom: 74px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(2) {
+    max-width: 150px;
+    left: 15px;
+    top: 10px;
+    margin-bottom: 70px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(3) {
+    max-width: 150px;
+    left: 8px;
+    top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(4) {
+    max-width: 200px;
+    left: -55px;
+    top: 25px;
+    margin-bottom: 55px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(5) {
+    left: -167px;
+    top: 20px;
   }
 }
 
@@ -1736,6 +1925,31 @@
     height: 40px;
     bottom: 200px;
     right: 15%;
+  }
+
+  .doctor-top {
+    max-width: 580px;
+  }
+
+  .doctor-bottom__text-mob {
+    display: none;
+  }
+
+  .doctor-bottom__text-desk {
+    display: block;
+  }
+
+  .doctor-bottom__title {
+    max-width: 510px;
+  }
+
+  .doctor-bottom__text {
+    max-width: 510px;
+  }
+
+  .doctor-bottom__list {
+    top: 50px;
+    left: -40px;
   }
 }
 
