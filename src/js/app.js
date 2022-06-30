@@ -91,4 +91,12 @@ $(document).ready(function () {
     }
   })
 
+  // --------------SCROLL-------------------
+  $(".toform").on("touchend, click", function (e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $('#order_form').offset().top
+    }, 400);
+  });
+
 })

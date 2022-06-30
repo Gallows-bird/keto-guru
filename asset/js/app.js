@@ -79,5 +79,12 @@ $(document).ready(function () {
       $(this).addClass('active').siblings().removeClass('active').text('+');
       $('.components__item').removeClass('active').eq($(this).index()).addClass('active');
     }
+  }); // --------------SCROLL-------------------
+
+  $(".toform").on("touchend, click", function (e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $('#order_form').offset().top
+    }, 400);
   });
 });

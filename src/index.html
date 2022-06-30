@@ -30,7 +30,7 @@
       <p class="header__text">
         Экспресс-похудение без вреда для здоровья!
       </p>
-      <a href="#" class="header__button button">Узнать больше</a>
+      <a href="#" class="header__button button toform">Узнать больше</a>
     </div>
   </section>
 </header>
@@ -121,7 +121,7 @@
           </li>
         </ul>
       </div>
-      <a href="#" class="try__button pink-button button">Попробовать сейчас</a>
+      <a href="#" class="try__button pink-button button toform">Попробовать сейчас</a>
     </div>
     <div class="leaf leaf1"></div>
     <div class="leaf leaf2"></div>
@@ -175,7 +175,7 @@
             пределах нормы.
           </p>
         </div>
-        <a class="pink-button button">Хочу начать</a>
+        <a class="pink-button button toform">Хочу начать</a>
       </div>
     </div>
   </section>
@@ -292,7 +292,7 @@
           </p>
         </li>
       </ul>
-      <a href="#" class="button pink-button">Похудеть с Keto&nbsp;Guru</a>
+      <a href="#" class="button pink-button toform">Похудеть с Keto&nbsp;Guru</a>
     </div>
     <div class="leaf leaf1"></div>
     <div class="leaf leaf2"></div>
@@ -476,14 +476,38 @@
           </div>
         </div>
         <div class="doctor-bottom__list">
-          <img src="./img/doctor-line.png" alt="" class="doctor-bottom__line-mob">
-          <img src="./img/doctor-line-desktop.png" alt="" class="doctor-bottom__line-desk">
           <ul>
-            <li><span style="color: #fff;">81%</span> стабильный вес после завершения программы</li>
-            <li><span style="color: #fff;">98% </span>снижение веса и аппетита</li>
-            <li><span style="color: #fff;">82% </span>улучшение состояния кожи, волос и ногтей</li>
-            <li><span style="color: #fff;">87% </span>подтягивание кожи, уменьшение целлюлита</li>
-            <li><span style="color: #fff;">94% </span>улучшение состояния организма</li>
+            <li>
+              <div class="doctor__item-img"><img src="/img/doctor-li1.png" alt=""></div>
+              <div class="doctor__item-right">
+                <span style="color: #fff;" class="percent">81%</span>
+                <span class="doctor__item-text">стабильный вес после завершения программы</span>
+              </div>
+            </li>
+            <li>
+              <div class="doctor__item-img"><img src="/img/doctor-li2.png" alt=""></div>
+              <div class="doctor__item-right">
+                <span style="color: #fff;" class="percent">98% </span><span class="doctor__item-text">снижение веса и аппетита</span>
+              </div>
+            </li>
+            <li>
+              <div class="doctor__item-img"><img src="/img/doctor-li3.png" alt=""></div>
+              <div class="doctor__item-right">
+                <span style="color: #fff;" class="percent">82% </span><span class="doctor__item-text">улучшение состояния кожи, волос и ногтей</span>
+              </div>
+            </li>
+            <li>
+              <div class="doctor__item-img"><img src="/img/doctor-li4.png" alt=""></div>
+              <div class="doctor__item-right">
+                <span style="color: #fff;" class="percent">87% </span><span class="doctor__item-text">подтягивание кожи, уменьшение целлюлита</span>
+              </div>
+            </li>
+            <li>
+              <div class="doctor__item-img"><img src="/img/doctor-li5.png" alt=""></div>
+              <div class="doctor__item-right">
+                <span style="color: #fff;" class="percent">94% </span><span class="doctor__item-text">улучшение состояния организма</span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -685,6 +709,32 @@
           </p>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="form-section">
+    <div class="container">
+      <div class="form__head">
+        <div class="form__title block-title">Мощный удар по лишнему весу</div>
+        <div class="form__text">Не оставляй жиру ни единого шанса!</div>
+      </div>
+      <div class="form__img">
+        <img src="/img/form-girl.png" alt="" class="form__img-girl">
+        <img src="/img/product.png" alt="" class="form__img-prod">
+      </div>
+      <form class="form-block" action="" id="order_form" method="post">
+        <div class="form__block-head">ОФОРМИТЬ ЗАКАЗ</div>
+        <div class="form-select-wrap">
+          <select class="input-form form-select" id="country_code_selector" name="country">
+            <option value="RU">Россия</option>
+          </select>
+        </div>
+        <input class="input-form" id="form_name" name="name" type="text"
+               required="" value="Ваше имя">
+        <input class="input-form only_number" id="form_phone" name="phone" type="tel"
+               required="" value="Номер телефона">
+        <button class="button pink-button js_submit button__text" type="submit">ЗАКАЗАТЬ KETO&nbsp;GURU
+        </button>
+      </form>
     </div>
   </section>
 </main>
