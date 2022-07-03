@@ -1,14 +1,14 @@
 @import "_normalize.scss";
-@import "_fonts.scss";
+//@import "_fonts.scss";
 @import "_slick.scss";
 
 .header {
-  background: url("/img/background-header-pink.png") no-repeat 100% top, url("/img/header-girl-big.png") no-repeat 70% top;
+  background: url("@img/background-header-pink.png") no-repeat 100% top, url("@img/header-girl-big.png") no-repeat 70% top;
   min-height: 500px;
   color: #fff;
   font-family: "Roboto Light", sans-serif;
-  mask-image: url("/img/mask.svg") no-repeat center bottom / auto 100%;
-  -webkit-mask: url("/img/mask.svg") no-repeat center bottom / auto 100%;
+  mask-image: url("@img/mask.svg") no-repeat center bottom / auto 100%;
+  -webkit-mask: url("@img/mask.svg") no-repeat center bottom / auto 100%;
   background-size: auto 100%;
   position: relative;
   z-index: 500;
@@ -100,7 +100,7 @@
   box-sizing: border-box;
 
   &::before {
-    content: url("/img/mouse.png");
+    content: url("@img/mouse.png");
     position: absolute;
     top: 7px;
     left: 5px;
@@ -108,7 +108,7 @@
 }
 
 .defect-section {
-  background: url("/img/compare-background-mob.png") no-repeat center top;
+  background: url("@img/compare-background-mob.png") no-repeat center top;
   min-height: 1100px;
   margin-top: -110px;
   padding-top: 150px;
@@ -119,7 +119,7 @@
 }
 
 .defect__text {
-  background: url("/img/ellipses.png") no-repeat;
+  background: url("@img/ellipses.png") no-repeat;
   background-size: 100% 100%;
   width: 210px;
   padding: 40px 25px 45px 30px;
@@ -155,9 +155,7 @@
 .defect__side-left .defect__side-title {
   position: relative;
   padding: 5px 0px 5px 50px;
-  background: -o-linear-gradient(left, transparent 0%, #ce0202 70%);
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(70%, #ce0202));
-  background: linear-gradient(left, transparent 0%, #ce0202 70%);
+  background: #ce0202;
   margin-left: -50px;
   margin-right: 15px;
 
@@ -176,9 +174,7 @@
 .defect__side-right .defect__side-title {
   position: relative;
   padding: 5px 50px 5px 0px;
-  background: -o-linear-gradient(left, #ce0202 0%, #ce0202 70%, transparent 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ce0202), color-stop(70%, #ce0202), to(transparent));
-  background: linear-gradient(left, #ce0202 0%, #ce0202 70%, transparent 100%);
+  background: #ce0202;
   margin-right: -50px;
   margin-left: 15px;
 
@@ -217,45 +213,45 @@
 }
 
 .defect__side-left .defect__item:nth-child(1) {
-  background: url("/img/time-icon.png") no-repeat center top;
+  background: url("@img/time-icon.png") no-repeat center top;
 }
 
 .defect__side-left .defect__item:nth-child(2) {
-  background: url("/img/food-icon.png") no-repeat center top;
+  background: url("@img/food-icon.png") no-repeat center top;
 }
 
 .defect__side-left .defect__item:nth-child(3) {
-  background: url("/img/percent-icon.png") no-repeat center top;
+  background: url("@img/percent-icon.png") no-repeat center top;
 }
 
 .defect__side-left .defect__item:nth-child(4) {
-  background: url("/img/organ-icon.png") no-repeat center top;
+  background: url("@img/organ-icon.png") no-repeat center top;
 }
 
 .defect__side-left .defect__item:nth-child(5) {
-  background: url("/img/muscle-icon.png") no-repeat center top;
+  background: url("@img/muscle-icon.png") no-repeat center top;
 }
 
 .defect__side-right .defect__item:nth-child(1) {
-  background: url("/img/sport-icon.png") no-repeat center top;
+  background: url("@img/sport-icon.png") no-repeat center top;
 }
 
 .defect__side-right .defect__item:nth-child(2) {
-  background: url("/img/calendar-icon.png") no-repeat center top;
+  background: url("@img/calendar-icon.png") no-repeat center top;
 }
 
 .defect__side-right .defect__item:nth-child(3) {
-  background: url("/img/bone-icon.png") no-repeat center top;
+  background: url("@img/bone-icon.png") no-repeat center top;
 }
 
 .defect__side-right .defect__item:nth-child(4) {
-  background: url("/img/scales-icon.png") no-repeat center top;
+  background: url("@img/scales-icon.png") no-repeat center top;
 }
 
 .try-section {
   position: relative;
   min-height: 700px;
-  background: url("/img/background-try.png") no-repeat;
+  background: url("@img/background-try.png") no-repeat;
   background-size: auto 100%;
   background-position: top center;
   margin-top: -120px;
@@ -352,7 +348,7 @@
 }
 
 .leaf1 {
-  background: url("/img/leaf1.png") no-repeat;
+  background: url("@img/leaf1.png") no-repeat;
   background-size: contain;
 }
 
@@ -362,7 +358,7 @@
 }
 
 .leaf2 {
-  background: url("/img/leaf2.png") no-repeat;
+  background: url("@img/leaf2.png") no-repeat;
   background-size: contain;
 }
 
@@ -372,7 +368,7 @@
 }
 
 .leaf3 {
-  background: url("/img/leaf3.png") no-repeat;
+  background: url("@img/leaf3.png") no-repeat;
   background-size: contain;
 }
 
@@ -389,8 +385,8 @@
   padding-top: 180px;
   padding-bottom: 70px;
   background-color: #f9f1fd;
-  mask-image: url("/img/mask.svg") no-repeat center bottom / auto 100%;
-  -webkit-mask: url("/img/mask.svg") no-repeat center bottom / auto 100%;
+  mask-image: url("@img/mask.svg") no-repeat center bottom / auto 100%;
+  -webkit-mask: url("@img/mask.svg") no-repeat center bottom / auto 100%;
   font-family: "Roboto Light", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -475,7 +471,7 @@
   &::after {
     content: '';
     position: absolute;
-    background: url("/img/purple_arrow.png") no-repeat;
+    background: url("@img/purple_arrow.png") no-repeat;
     width: 60px;
     height: 152px;
     right: 0;
@@ -501,7 +497,7 @@
     position: absolute;
     top: -30px;
     right: 46%;
-    background: url("/img/purple-small-arrow.png") no-repeat top center;
+    background: url("@img/purple-small-arrow.png") no-repeat top center;
     transform: rotate(-90deg);
     width: 17px;
     height: 27px;
@@ -515,7 +511,7 @@
     right: 46%;
     width: 17px;
     height: 27px;
-    background: url("/img/purple-small-arrow.png") no-repeat top center;
+    background: url("@img/purple-small-arrow.png") no-repeat top center;
   }
 }
 
@@ -523,7 +519,7 @@
   min-height: 750px;
   margin-top: -200px;
   padding-top: 140px;
-  background: url("/img/slider-background.png") no-repeat;
+  background: url("@img/slider-background.png") no-repeat;
   background-size: auto 100%;
   background-position: top center;
   position: relative;
@@ -631,7 +627,7 @@
 }
 
 .components-section {
-  background: url('/img/background-components.png') no-repeat top center;
+  background: url('@img/background-components.png') no-repeat top center;
   font-family: "Roboto Light", sans-serif;
   background-size: auto 100%;
   margin-top: -120px;
@@ -694,31 +690,31 @@
 }
 
 .components__item:nth-child(1) {
-  background-image: url("/img/brain-icon.png");
+  background-image: url("@img/brain-icon.png");
   background-repeat: no-repeat;
   background-position: 99% center;
 }
 
 .components__item:nth-child(2) {
-  background-image: url("/img/moon-icon.png");
+  background-image: url("@img/moon-icon.png");
   background-repeat: no-repeat;
   background-position: 99% center;
 }
 
 .components__item:nth-child(3) {
-  background-image: url("/img/slim-icon.png");
+  background-image: url("@img/slim-icon.png");
   background-repeat: no-repeat;
   background-position: 99% center;
 }
 
 .components__item:nth-child(4) {
-  background-image: url("/img/stomach-icon.png");
+  background-image: url("@img/stomach-icon.png");
   background-repeat: no-repeat;
   background-position: 1% center;
 }
 
 .components__item:nth-child(5) {
-  background-image: url("/img/liquid-icon.png");
+  background-image: url("@img/liquid-icon.png");
   background-repeat: no-repeat;
   background-position: 1% center;
 }
@@ -837,12 +833,11 @@
   background-color: #fbf7fd;
   margin-top: -180px;
   padding-top: 180px;
-  margin-bottom: -200px;
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
-  mask-image: url("/img/mask.svg") no-repeat center bottom / auto 100%;
-  -webkit-mask: url("/img/mask.svg") no-repeat center bottom / auto 100%;
+  mask-image: url("@img/mask.svg") no-repeat center bottom / auto 100%;
+  -webkit-mask: url("@img/mask.svg") no-repeat center bottom / auto 100%;
   z-index: 10;
 }
 
@@ -983,17 +978,25 @@
 }
 
 .doctor-section {
-  background: url("/img/doctor-bg-mob.png") no-repeat;
+  background: url("@img/doctor-bg-mob.png") no-repeat;
   background-position: top center;
-  padding-top: 100px;
+  padding-top: 200px;
   font-family: "Roboto Light", sans-serif;
   font-size: 17px;
   background-size: cover;
   line-height: 20px;
-  mask-image: url("/img/mask.svg") no-repeat center bottom / auto 100%;
-  -webkit-mask: url("/img/mask.svg") no-repeat center bottom / auto 100%;
-  padding-bottom: 200px;
-  z-index: 20;
+  mask-image: url("@img/mask.svg") no-repeat center bottom / auto 100%;
+  -webkit-mask: url("@img/mask.svg") no-repeat center bottom / auto 100%;
+  padding-bottom: 250px;
+  overflow: hidden;
+  margin-top: -200px;
+}
+
+/* стили только для IE9 */
+@media screen and (min-width:0\0) {
+  .doctor-section {
+    margin-top: 0;
+  }
 }
 
 .doctor-top {
@@ -1037,7 +1040,7 @@
 .doctor-bottom__text {
   font-size: 15px;
   line-height: 20px;
-  max-width: 130px;
+  max-width: 124px;
   float: left;
   margin-top: 15px;
 }
@@ -1065,7 +1068,7 @@
 
 .fb__head {
   height: 40px;
-  background: url("/img/fb-head-mob.png") no-repeat center center;
+  background: url("@img/fb-head-mob.png") no-repeat center center;
   background-size: contain;
 }
 
@@ -1168,7 +1171,7 @@
 }
 
 .steps-section {
-  background: url("/img/steps-bg-desk.png") no-repeat center;
+  background: url("@img/steps-bg-desk.png") no-repeat center;
   background-size: cover;
   min-height: 960px;
   padding-top: 65px;
@@ -1208,7 +1211,7 @@
 .steps__item:nth-child(2)::after {
   content: '';
   display: block;
-  background: url("/img/steps-arrow.png") no-repeat center;
+  background: url("@img/steps-arrow.png") no-repeat center;
   background-size: cover;
   position: absolute;
   width: 28px;
@@ -1221,10 +1224,11 @@
 
 .form-section {
   padding: 115px 0px;
-  background: url("/img/form-bg.png") no-repeat center;
+  background: url("@img/form-bg.png") no-repeat center;
   background-size: cover;
   min-height: 1100px;
-  margin-top: -96px;
+  overflow: hidden;
+  margin-top: -130px;
   position: relative;
   z-index: 10;
   font-family: "Roboto Light", sans-serif;
@@ -1299,7 +1303,7 @@ select:not([multiple]) {
   background-repeat: no-repeat;
   background-position: 95% 50%;
   background-size: 0.85em auto;
-  background-image: url("/img/form-arrow.png");
+  background-image: url("@img/form-arrow.png");
 }
 
 /* скроет иконку стрелки в IE */
@@ -1330,6 +1334,8 @@ select::-ms-expand {
   font-size: 13px;
   color: #a789db;
   float: right;
+  margin-top: -265px;
+  max-width: 170px;
 }
 
 .doctor-bottom__list .percent {
@@ -1358,10 +1364,11 @@ select::-ms-expand {
   text-align: center;
   padding-top: 8px;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .doctor__item-right {
-  max-width: 110px;
+  max-width: 115px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1369,18 +1376,45 @@ select::-ms-expand {
 
 .doctor-bottom__list ul::before {
   content: "";
-  background: url("/img/doctor-line-mob.png") no-repeat center;
+  background: url("@img/doctor-line-mob.png") no-repeat center;
   width: 183px;
   height: 303px;
   position: absolute;
   left: 0px;
   z-index: 0;
-  bottom: 150px;
+  bottom: 5px;
 }
 
 .doctor-bottom__list ul li {
   position: relative;
   z-index: 555;
+  max-width: 173px;
+}
+
+.doctor-bottom__list ul li:nth-child(1) {
+  margin-left: -5px;
+  top: -8px;
+}
+
+.doctor-bottom__list ul li:nth-child(2) {
+  right: -25px;
+}
+
+.doctor-bottom__list ul li:nth-child(3) {
+  right: -25px;
+  bottom: -10px;
+}
+
+.doctor-bottom__list ul li:nth-child(4) {
+  right: 0px;
+  bottom: -20px;
+  max-width: 210px;
+}
+
+.doctor-bottom__list ul li:nth-child(5) {
+  right: 85px;
+  bottom: -25px;
+
 }
 
 .doctor__item-img img {
@@ -1388,9 +1422,19 @@ select::-ms-expand {
   height: 30px;
 }
 
+@media (min-width: 330px) {
+  .doctor-bottom__list {
+    margin-top: -13px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(4) {
+    right: 15px;
+  }
+}
+
 @media (min-width: 480px) {
   .header {
-    background: url("/img/background-header-pink.png") no-repeat 110% top, url("/img/header-girl-big.png") no-repeat 60% top;
+    background: url("@img/background-header-pink.png") no-repeat 110% top, url("@img/header-girl-big.png") no-repeat 60% top;
   }
 
   .input-wrap {
@@ -1400,7 +1444,7 @@ select::-ms-expand {
 
 @media (min-width: 767px) {
   .header {
-    background: url("/img/background-header-pink.png") no-repeat 160% top, url("/img/header-girl-big.png") no-repeat center top;
+    background: url("@img/background-header-pink.png") no-repeat 160% top, url("@img/header-girl-big.png") no-repeat center top;
   }
 
   .container {
@@ -1424,7 +1468,7 @@ select::-ms-expand {
   }
 
   .defect-section {
-    background: url("/img/compare-background.png") no-repeat center top;
+    background: url("@img/compare-background.png") no-repeat center top;
   }
 
   .d-none {
@@ -1446,13 +1490,16 @@ select::-ms-expand {
     max-width: 260px;
     padding: 15px 15px 15px 35px;
     margin-bottom: 30px;
+    background: #ce0202;
+
   }
 
   .defect__side-right .defect__side-title {
     max-width: 260px;
-    padding: 15px 50px 15px 15px;
+    padding: 15px 30px 15px 10px;
     margin-right: -25px;
     margin-bottom: 30px;
+    background: #ce0202;
   }
 
   .defect__side-right .defect__item {
@@ -1488,7 +1535,7 @@ select::-ms-expand {
   }
 
   .try-section {
-    background: url("/img/background-try-big.png") no-repeat;
+    background: url("@img/background-try-big.png") no-repeat;
     background-position: top center;
     padding-bottom: 210px;
   }
@@ -1523,7 +1570,7 @@ select::-ms-expand {
   }
 
   .slider-section {
-    background: url("/img/slider-background-big.png") no-repeat top center;
+    background: url("@img/slider-background-big.png") no-repeat top center;
     min-height: 970px;
     padding-top: 400px;
   }
@@ -1547,7 +1594,7 @@ select::-ms-expand {
   }
 
   .components-section {
-    background: url("/img/background-components-big.png") no-repeat top center;
+    background: url("@img/background-components-big.png") no-repeat top center;
     background-size: 100% 100%;
     margin-top: -200px;
     padding-top: 150px;
@@ -1596,7 +1643,7 @@ select::-ms-expand {
   }
 
   .doctor-section {
-    background: url("/img/doctor-bg.png") no-repeat;
+    background: url("@img/doctor-bg.png") no-repeat;
     background-position: top center;
     background-size: cover;
     padding-bottom: 300px;
@@ -1642,7 +1689,7 @@ select::-ms-expand {
   }
 
   .fb__head {
-    background: url("/img/fb-head-desk.png");
+    background: url("@img/fb-head-desk.png");
   }
 
   .fb__btns-wrap span {
@@ -1724,7 +1771,7 @@ select::-ms-expand {
   }
 
   .steps-section {
-    background: url("/img/steps-bg.png") no-repeat center;
+    background: url("@img/steps-bg.png") no-repeat center;
     background-size: cover;
     padding-top: 320px;
     margin-top: -140px;
@@ -1753,7 +1800,7 @@ select::-ms-expand {
   }
 
   .form-section {
-    background: url("/img/form-bg-desk.png") no-repeat center;
+    background: url("@img/form-bg-desk.png") no-repeat center;
     background-size: cover;
     min-height: auto;
     overflow: hidden;
@@ -1789,7 +1836,7 @@ select::-ms-expand {
   .form-block {
     max-width: 300px;
     margin-left: auto;
-    background: url("/img/form-block-bg.png") no-repeat center;
+    background: url("@img/form-block-bg.png") no-repeat center;
     background-size: contain;
     padding: 100px 150px 100px 100px;
     margin-right: -150px;
@@ -1797,11 +1844,84 @@ select::-ms-expand {
     z-index: 30;
   }
 
+  .doctor-bottom__list ul::before {
+    background: url("@img/doctor-line-desktop.png") no-repeat center;
+    width: 456px;
+    height: 553px;
+  }
+
+  .doctor-bottom__title {
+    max-width: 415px;
+  }
+
+  .doctor-bottom__list {
+    margin-top: -200px;
+    font-size: 24px;
+    max-width: 370px;
+  }
+
+  .doctor__item-right {
+    max-width: 250px;
+  }
+
+
+  .doctor-bottom__list ul li:nth-child(4) {
+    max-width: 100%;
+  }
+
+  .doctor-bottom__list ul li {
+    max-width: 370px;
+  }
+
+  .doctor__item-img {
+    width: 100px;
+    height: 100px;
+    padding-top: 19px;
+  }
+
+  .doctor__item-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .doctor-bottom__list ul::before {
+    top: -120px;
+    left: -400px;
+  }
+
+  .doctor-bottom__list ul {
+    position: relative;
+  }
+
+  .doctor-bottom__list ul li:nth-child(1) {
+    top: -97px;
+    left: -25px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(2) {
+    top: -75px;
+    left: 0px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(3) {
+    top: -40px;
+    left: 0px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(4) {
+    top: -10px;
+    left: -70px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(5) {
+    top: -25px;
+    left: -180px;
+  }
 }
 
 @media (min-width: 980px) {
   .header {
-    background: url("/img/background-header-pink.png") no-repeat 180% top, url("/img/header-girl-big.png") no-repeat center top;
+    background: url("@img/background-header-pink.png") no-repeat 180% top, url("@img/header-girl-big.png") no-repeat center top;
     min-height: 850px;
   }
 
@@ -2280,18 +2400,48 @@ select::-ms-expand {
     content: '';
     position: absolute;
     bottom: -20px;
-    right: 334px;
+    right: 338px;
     height: 4px;
     width: 244px;
     border-top: 1px solid rgb(255, 92, 161);
     border-bottom: 1px solid rgb(255, 92, 161);
     z-index: 200;
   }
+
+  .doctor-bottom__list ul::before {
+    top: -80px;
+    left: -470px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(1) {
+    top: -60px;
+    left: -80px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(2) {
+    top: -40px;
+    left: -60px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(3) {
+    top: 2px;
+    left: -65px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(4) {
+    top: 35px;
+    left: -125px;
+  }
+
+  .doctor-bottom__list ul li:nth-child(5) {
+    top: 20px;
+    left: -250px;
+  }
 }
 
 @media (min-width: 1200px) {
   .header {
-    background: url("/img/background-header-pink.png") no-repeat left top, url("/img/header-girl-big.png") no-repeat center top;
+    background: url("@img/background-header-pink.png") no-repeat left top, url("@img/header-girl-big.png") no-repeat center top;
   }
 
 }
