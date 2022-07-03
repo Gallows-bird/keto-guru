@@ -1,5 +1,5 @@
 export const server = (done) => {
-  app.plugins.browsersync.init({
+  app.plugins.browserSync.init({
     server: {
       baseDir: `${app.path.build.html}`
     },
